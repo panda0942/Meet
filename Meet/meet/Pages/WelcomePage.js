@@ -7,7 +7,7 @@ export default function WelcomePage({navigation}) {
     useEffect(() => {
         // Navigate to the second page after 5 seconds
         const timer = setTimeout(() => {
-          navigation.replace('Home'); // Replace 'SecondPage' with the name of your second screen
+          navigation.replace('BottomTab'); // Replace 'SecondPage' with the name of your second screen
         }, 5000);
     
         // Clear the timer if the component is unmounted before the timeout

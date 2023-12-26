@@ -53,7 +53,7 @@ Image: {
     alignCircleSt:{
     alignItems: 'center',
     paddingBottom: 35,
-    
+ 
     },
 })
 

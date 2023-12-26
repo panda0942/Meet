@@ -878,13 +878,11 @@ const HomePage = ()=>{
 //   };
 
 const handleCirclePress = (item, index) => {
-    // Calculate the position of the selected item within the horizontal ScrollView
-    const position = index * 93; // Assuming ITEM_WIDTH is the width of each CircleComponent
-  
+    
+    const position = index * 93.5; 
     // Scroll to the calculated position
-    scrollViewRef.current?.scrollTo({ x: position, animated: true });
+    scrollViewRef.current?.scrollTo({ x: position , animated: true });
     verticalScrollViewRef.current?.scrollTo({ y: index * 600, animated: true });
-    // Set the selected item in the state
     setSelectedItem(item);
   };
 
@@ -927,7 +925,7 @@ const handleCirclePress = (item, index) => {
   ref={scrollViewRef}
   style={styles.HomeProfileSection}
   showsHorizontalScrollIndicator={false}
-  contentContainerStyle={{ justifyContent: 'center', gap: 13 }}
+  contentContainerStyle={{ justifyContent: 'center', gap: 13, }}
   horizontal={true}
 >
   {data.map((item, index) => (
@@ -1000,6 +998,7 @@ Image: {
     paddingLeft: 20,
     paddingRight: 20,
     paddingTop: 0,
+    
     },
 })
 
