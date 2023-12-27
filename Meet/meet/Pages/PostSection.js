@@ -2,8 +2,25 @@ import React from 'react'
 import {Text, View, StyleSheet, ScrollView, Image, TouchableOpacity} from 'react-native'
 import { AntDesign } from '@expo/vector-icons'; 
 import { MaterialIcons } from '@expo/vector-icons'; 
+import { useState } from 'react';
+
+
+
+
 
 const PostSection = ( {picture, name, quote })=>{
+
+ 
+        const [taps, setTaps] = useState(0);
+
+      
+          
+      
+        const handleTap = () => {
+          setTaps(taps + 1);
+        };
+      
+
 return(
  <View style={styles.container}>
 <View>
@@ -25,13 +42,14 @@ return(
 
 
    <View style={styles.alignIcons}>
-   
+{/*    
     <TouchableOpacity>
     <MaterialIcons name="mode-comment" size={24} color="#26788A" />
-    </TouchableOpacity>
+    </TouchableOpacity> */}
 
-    <TouchableOpacity>
+    <TouchableOpacity style={styles.alignlike} onPress={handleTap}>
     <AntDesign name="like1" size={23} color="#26788A" />
+    <Text style={styles.counterText}>{`${taps}`}</Text>
     </TouchableOpacity>
     </View>
 
@@ -68,8 +86,8 @@ container:{
     height: 355,
     width: 370,
     // borderRadius: 10,
-    borderWidth: 2,
-    borderColor: '#26788A', 
+    // borderWidth: 2,
+    // borderColor: '#26788A', 
 },
  alignPostHead:{
  alignItems: 'center',
@@ -85,6 +103,15 @@ container:{
  marginTop: 10,
  position: 'relative',
  left:'22%'
+ },
+ alignlike:{
+ alignItems: 'center',
+ justifyContent:'center',
+
+ },
+ counterText:{
+    color: '#26788A',
+    fontSize: 10,
  },
 })
 

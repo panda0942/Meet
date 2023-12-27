@@ -942,7 +942,7 @@ const handleCirclePress = (item, index) => {
 
 <ScrollView showsVerticalScrollIndicator={false} ref={verticalScrollViewRef} >
   {data.map((item, index) => (
-      <PostSection picture={item.picture} name={item.name} quote={item.quote}/>
+      <PostSection key={index} picture={item.picture} name={item.name} quote={item.quote}/>
   ))}
 </ScrollView>
 
