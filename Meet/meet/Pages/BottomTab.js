@@ -3,6 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import {NavigationContainer} from '@react-navigation/native'
 import HomePage from './HomePage'
 import SearchScreen from './SearchScreen'
+import UserPage from './UserPage'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 const BottomTab =()=>{
@@ -63,8 +64,8 @@ tabBarIcon: ({color,size,focused,style})=>(
 
 
 <Tab.Screen
-name="Searc"
-component={SearchScreen}
+name="User"
+component={UserPage}
 options={{
 headerShown:false,
 tabBarIcon: ({color,size,focused,style})=>(

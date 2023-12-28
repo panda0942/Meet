@@ -32,7 +32,7 @@ return(
    />
    <Text style={{color:'#26788A', fontSize: 16, fontWeight: 'bold',}}>{name}</Text>
    </View>
-   <Text style={{ padding:12,color:'#26788A', }}> {quote} </Text>
+   <Text style={{ padding:12,color:'#26788A',width: 370, }}> {quote} </Text>
 
    <Image 
    source={{uri : picture }}
@@ -60,10 +60,11 @@ return(
 
 const styles = StyleSheet.create({
 container:{
+   flex: 1,
      marginTop: 13,
      alignItems: 'center',
      justifyContent: 'center',
-       marginBottom: 97,
+   //  marginBottom: 97,
        backgroundColor: 'white',
     //  borderWidth: 3,
     //  paddingTop: 10,
@@ -84,7 +85,7 @@ container:{
  },
  LargeImage:{
     height: 355,
-    width: 370,
+    
     // borderRadius: 10,
     // borderWidth: 2,
     // borderColor: '#26788A', 

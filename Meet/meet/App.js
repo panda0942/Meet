@@ -5,6 +5,7 @@ import HomePage from './Pages/HomePage'
 import CircleComponent from './Pages/CircleComponent'
 import SearchScreen from './Pages/SearchScreen'
 import BottomTab from './Pages/BottomTab'
+import UserPage from '../meet/Pages/UserPage'
 import {NavigationContainer} from '@react-navigation/native'
 import {createStackNavigator} from '@react-navigation/stack'
 
@@ -13,7 +14,7 @@ const Stack = createStackNavigator();
 
   return (
      <View style={styles.container}>
-     <NavigationContainer independent={true}  >
+      <NavigationContainer independent={true}  >
      <Stack.Navigator initialRouteScreen="welcome" >
     <Stack.Screen
     name="welcome"
@@ -30,10 +31,9 @@ const Stack = createStackNavigator();
 
   
 
-    </NavigationContainer>
+    </NavigationContainer> 
 
-
-       {/* <BottomTab/>  */}
+         {/* <UserPage/>   */}
     </View>
   );
 }

@@ -7,7 +7,7 @@ Welcome to Meet, your go-to platform for seamless and effortless professional ne
 
 - **Effortless Connection:** Connect with your colleagues effortlessly, fostering a stronger sense of teamwork and collaboration.
 
-- **User-Friendly Interface:** WorkBuddy is designed with simplicity in mind. Navigate easily to find and connect with professionals in your organization.
+- **User-Friendly Interface:** Meet is designed with simplicity in mind. Navigate easily to find and connect with professionals in your organization.
 
 - **Real-Time Updates:** Stay in the loop with real-time updates on your colleagues' profiles and activities.
 
