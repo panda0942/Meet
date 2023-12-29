@@ -16,6 +16,8 @@ Welcome to Meet, your go-to platform for seamless and effortless professional ne
 
 
 # App Access : 
+( Package manager - npm ) 
+
 1. cd Meet
 2. cd meet  (All in small letter this time)  
 3. npx expo start.
