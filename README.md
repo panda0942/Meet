@@ -13,14 +13,14 @@ Welcome to Meet, your go-to platform for seamless and effortless professional ne
 
 - **Secure Networking:** Enjoy secure and private networking within the confines of your organization.
 
-Pictures of the application ;
-![image](https://github.com/panda0942/Meet/assets/69324217/2fdeedab-8ec2-45f1-af29-e1e7fcff92e4)
-
-![image](https://github.com/panda0942/Meet/assets/69324217/fe3fe2b9-7780-4df0-ba10-b8c1dc5fffc7)
-
-![image](https://github.com/panda0942/Meet/assets/69324217/acb50d3c-eaa1-427d-8990-94affca2d088)
-
-![image](https://github.com/panda0942/Meet/assets/69324217/74830a00-6e41-4e27-ba4d-80a0980f3e5f)
+   
+   ![image](https://github.com/panda0942/Meet/assets/69324217/2fdeedab-8ec2-45f1-af29-e1e7fcff92e4)
+   
+   ![image](https://github.com/panda0942/Meet/assets/69324217/fe3fe2b9-7780-4df0-ba10-b8c1dc5fffc7)
+   
+   ![image](https://github.com/panda0942/Meet/assets/69324217/acb50d3c-eaa1-427d-8990-94affca2d088)
+   
+   ![image](https://github.com/panda0942/Meet/assets/69324217/74830a00-6e41-4e27-ba4d-80a0980f3e5f)
 
 
 # App Access : 
