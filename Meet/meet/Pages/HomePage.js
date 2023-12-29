@@ -21,10 +21,11 @@ const HomePage = () => {
   const [selectedItem, setSelectedItem] = useState(null);
 
   const verticalScrollViewRef = useRef(null);
-
+  const horizontalScrollViewRef = useRef(null);
   const handleCirclePress = (index) => {
     // Scroll to the corresponding index in the PostSection
     verticalScrollViewRef.current?.scrollToIndex({ index, animated: true });
+    horizontalScrollViewRef.current?.scrollToIndex({ index, animated: true });
   };
 
   return (
@@ -57,6 +58,7 @@ const HomePage = () => {
             />
           )}
           keyExtractor={(item) => item.name}
+          ref={horizontalScrollViewRef}
         />
       </View>
 
