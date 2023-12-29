@@ -43,7 +43,7 @@ const HomePage = () => {
         </TouchableOpacity>
       </View>
 
-      <View style={{ flex: 0.25 }}>
+      <View style={{ flex: 0.2 }}>
         <FlatList
           style={styles.HomeProfileSection}
           showsHorizontalScrollIndicator={false}
