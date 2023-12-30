@@ -18,6 +18,9 @@ import { useState, useRef } from 'react';
 const HomePage = () => {
   const data = require('./users.json');
 
+
+
+
   const [selectedItem, setSelectedItem] = useState(null);
 
   const verticalScrollViewRef = useRef(null);

@@ -28,12 +28,7 @@ const Stack = createStackNavigator();
     />
   
     </Stack.Navigator>
-
-  
-
     </NavigationContainer> 
-
-         {/* <UserPage/>   */}
     </View>
   );
 }
