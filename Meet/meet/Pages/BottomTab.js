@@ -1,4 +1,5 @@
 import React from 'react'
+import {View} from 'react-native'
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import {NavigationContainer} from '@react-navigation/native'
 import HomePage from './HomePage'
@@ -10,15 +11,16 @@ const BottomTab =()=>{
     const Tab = createBottomTabNavigator();
 
 return(
-<NavigationContainer independent={true}>
+    <View style={{  backgroundColor:  "white", flex: 1, padding: 5, }}>
+<NavigationContainer independent={true} style={{ backgroundColor: "white", }}>
 <Tab.Navigator 
 screenOptions={{
-tabBarActiveTintColor: "white",
+tabBarActiveTintColor: "#26788A",
 tabBarInactiveTintColor: "grey",
 tabBarStyle:{
-    borderTopColor: "#26788A",
-    borderTopWidth: 2, 
-    backgroundColor:  "#26788A", 
+    backgroundColor:  "white", 
+    borderRadius: 100,
+    
 }
 }}
 >
@@ -33,7 +35,7 @@ name={focused ? 'home': 'home'}
 color={color}
 size={23}
 style={{
-   paddingTop: 10, 
+   paddingTop: 10,  
 }}
 />
 ),
@@ -92,7 +94,7 @@ tabBarIcon: ({color,size,focused,style})=>(
 
 </Tab.Navigator>
 </NavigationContainer> 
-
+</View>
 )
 }
 

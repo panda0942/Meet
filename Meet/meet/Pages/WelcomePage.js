@@ -22,32 +22,32 @@ export default function WelcomePage({navigation}) {
 
 
  function Seasons() {
-   if ((month === 3 && numMon >= 20) || (month === 4 && numMon <= 21)) {
+   if ((month === 2 && numMon >= 20) || (month === 3 && numMon <= 21)) {
      return (
        <View>
          <Text> Spring </Text>
        </View>
      );
-   } else if ((month === 5 && numMon >= 20) || (month === 6 && numMon <= 21)) {
+   } else if ((month === 4 && numMon >= 20) || (month === 5 && numMon <= 21)) {
      return (
        <View>
          <Text> Summer </Text>
        </View>
      );
-   } else if ((month === 7 && numMon >= 20) || (month === 8 && numMon <= 21)) {
+   } else if ((month === 8 && numMon >= 20) || (month === 7 && numMon <= 21)) {
      return (
        <View>
          <Text> Autumn </Text>
        </View>
      );
-   } else if ((month === 9 && numMon >= 20) || (month === 10 && numMon <= 21)) {
+   } else if ((month === 8 && numMon >= 20) || (month === 9 && numMon <= 21)) {
      return (
        <View>
          <Text> Winter </Text>
         
        </View>
      );
-   } else if ((month === 11 && numMon >= 20) || (month === 12 && numMon <= 21)) {
+   } else if ((month === 10 && numMon >= 20) || (month === 11 && numMon <= 21)) {
      return (
        <View>
          {/* <Text> Winter </Text> */}
@@ -59,7 +59,7 @@ export default function WelcomePage({navigation}) {
          />
        </View>
      );
-   } else if ((month === 1 && numMon >= 20) || (month === 2 && numMon <= 21)) {
+   } else if ((month === 0 && numMon >= 20) || (month === 1 && numMon <= 21)) {
      return (
        <View>
          <Text> Winter </Text>
@@ -83,7 +83,7 @@ export default function WelcomePage({navigation}) {
       resizeMode="contain"
       style={styles.Image}
       />
-      <Text>{Seasons()}</Text>
+      {/* <Text>{Seasons()}</Text> */}
       <StatusBar style="auto" />
     </View>
   

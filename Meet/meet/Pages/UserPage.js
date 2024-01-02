@@ -26,7 +26,20 @@ const UserList =({item})=>{
           </Text>   
               )
              } 
-
+             else if ( item.dev && item.mentor && !item.des && item.pm  ){ 
+               return (
+            <Text>
+               Software Developer, Mentor,  Project Manager 
+            </Text>   
+                )
+               }    
+               else if ( item.dev && !item.mentor && item.des && item.pm  ){ 
+                  return (
+               <Text>
+                  Software Developer, UI/UX Designer, Project Manager 
+               </Text>   
+                   )
+                  }    
              else if ( item.dev && item.mentor && !item.des && !item.pm  ){ 
                return (
             <Text>
@@ -34,6 +47,20 @@ const UserList =({item})=>{
             </Text>   
                 )
                }    
+               else if ( item.dev && !item.mentor && !item.des && item.pm  ){ 
+                  return (
+               <Text>
+                  Software Developer, Project Manager
+               </Text>   
+                   )
+                  }    
+               else if ( item.dev && !item.mentor && item.des && !item.pm  ){ 
+                  return (
+               <Text>
+                  Software Developer, UI/UX Designer
+               </Text>   
+                   )
+                  }    
                else if ( item.dev && !item.mentor && !item.des && !item.pm  ){ 
                   return (
                <Text>
@@ -48,13 +75,21 @@ const UserList =({item})=>{
                   </Text>   
                       )
                      }
-                     else if ( !item.dev && item.mentor && !item.des && item.pm  ){ 
+                     else if ( !item.dev && !item.mentor && item.des && item.pm  ){ 
                         return (
                      <Text>
-                        Project Manager , Mentor 
+                        UI/UX Designer, Project Manager 
                      </Text>   
                          )
-                        } 
+                        }
+                        else if ( !item.dev && item.mentor && !item.des && item.pm  ){ 
+                           return (
+                        <Text>
+                            Project Manager , Mentor
+                        </Text>   
+                            )
+                           }
+                        
                         else if ( !item.dev && item.mentor && item.des && !item.pm  ){ 
                            return (
                         <Text>
@@ -69,10 +104,10 @@ const UserList =({item})=>{
                            </Text>   
                                )
                               }  
-                           else if ( !item.dev && !item.mentor && item.des && item.pm  ){ 
+                           else if ( !item.dev && !item.mentor && item.des && !item.pm  ){ 
                               return (
                            <Text>
-                              Project Manager,  UI/UX Designer  
+                               UI/UX Designer  
                            </Text>   
                                )
                               }    
@@ -88,7 +123,7 @@ const UserList =({item})=>{
 
 
    return(
-      <SafeAreaView style={{flex:1,justifyContent: 'center', gap: 4, marginBottom: 60,}}>
+      <SafeAreaView style={{flex:1,justifyContent: 'center', gap: 4, marginBottom: 60,  backgroundColor:  "white", }}>
       
       <ImageBackground  
       style={styles.ImageBackground}
@@ -111,7 +146,7 @@ const UserList =({item})=>{
       
           </View>
       </ImageBackground>
-      <View style={{flex:1, alignItems: 'center', flexDirection: 'column', gap: 5,}}>
+      <View style={{flex:1, alignItems: 'center', flexDirection: 'column', gap: 5,  backgroundColor:  "white", }}>
          
       <View style={styles.description}>
          <View style={{flex:1,}}>
@@ -189,6 +224,9 @@ renderItem={UserList}
 keyExtractor={(item)=>(item.name)}
 contentContainerStyle={{padding:10,}}
 showsVerticalScrollIndicator= {false}
+contentContainerStyle={{
+   backgroundColor:  "white", 
+}}
 />
    )
 
