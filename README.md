@@ -25,8 +25,10 @@ Welcome to Meet, your go-to platform for seamless and effortless professional ne
 
 # App Access : 
 ( Package manager - npm ) 
+1. "npm install"
+2. cd Meet
+3. cd meet  (All in small letter this time)  
+4. npx expo start.
 
-1. cd Meet
-2. cd meet  (All in small letter this time)  
-3. npx expo start.
+Linkedln post : https://www.linkedin.com/posts/herbert-sekpey-39340a1aa_meetapp-reactnative-networkingrevolution-activity-7147750521351712768-jRMC?utm_source=share&utm_medium=member_desktop 
    
